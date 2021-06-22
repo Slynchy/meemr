@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "baseUrl": "./src",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "ES2017",
+    "jsx": "react-native",
+    "allowJs": true,
+    "sourceMap": true,
+    "resolveJsonModule": false,
+    "paths": {},
+    "typeRoots": [ "./types", "./node_modules/@types"]
+  }
+}

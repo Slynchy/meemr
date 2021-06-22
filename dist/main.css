@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#numOfLines, #fontSize {
+    font-size: 16px;
+}
+
+.hint {
+    visibility: hidden;
+    font-family: 'Open Sans', sans-serif;
+    color: #101010;
+    text-align: center;
+    font-size: 14px;
+    margin: unset;
+}
+
+.fontPreload {
+    position: absolute;
+    left: -999px;
+    overflow: hidden;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #101010;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#canvasWrapper {
+    visibility: hidden;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#splashImage {
+    margin: auto;
+    display: block;
+    width: 400px;
+    height: 350px;
+    padding-bottom: 25px;
+}
+
+#splashImageImg {
+}
+
+#mainCanvas {
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    visibility: hidden;
+}
+
+.search {
+    width: 100%;
+    transform: translate(0%, 0%);
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus{
+    color: #00B4CC;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.searchResult {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+  The grid itself needs only 4 CSS declarations:
+*/
+
+.myGallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.myGallery img {
+    width: 100%;
+}
+
+/*
+  And here are some declarations for the image caption.
+  Just hover over one of the last 5 images to see it.
+*/
+
+.myGallery .item {
+    position: relative;
+    overflow: hidden;
+}
+
+.myGallery .item img {
+    vertical-align: middle;
+}

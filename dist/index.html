@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I've got a jar of dirt!</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="game.js"></script>
+</head>
+<body>
+<p class="fontPreload" style="font-family: 'Oswald', sans-serif">.</p>
+<p class="fontPreload" style="font-family: Open Sans, sans-serif">.</p>
+<div id="canvasWrapper">
+    <canvas id="mainCanvas"></canvas>
+    <p class="hint">Right-click the image to copy/save</p>
+</div>
+<!--https://codepen.io/huange/pen/rbqsD-->
+<div class="wrap">
+    <div id="resultDiv" class="myGallery">
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+        <a href="#"><img class="searchResult" src=""></a>
+    </div>
+    <div id="splashImage">
+        <img id="splashImageImg" title="Where is the thump-thump?" src="https://i.pinimg.com/originals/ea/93/26/ea9326eb0c2abe5b7a361ebe107e4afa.jpg" />
+    </div>
+    <div id="searchBarDiv" class="search">
+        <input id="searchBar" type="text" class="searchTerm"  placeholder="Type a quote here, savvy?" onsubmit="search()"/>
+        <button type="submit" title="Search!" alt="Search!" class="searchButton" onclick="search()">
+            <i>></i>
+        </button>
+    </div>
+</div>
+</body>
+<footer style="font-size: 12px">Powered by <a href="https://github.com/Slynchy/meemr">meemr</a></footer>
+</html>
